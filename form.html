@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VALIDDXN GLOBAL FUNDING PROGRAM</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    padding:30px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.header{
+    background:#0d6b45;
+    color:#fff;
+    text-align:center;
+    padding:35px;
+}
+
+.header h1{
+    font-size:32px;
+}
+
+.header p{
+    margin-top:10px;
+    opacity:.9;
+}
+
+.form-container{
+    padding:35px;
+}
+
+.section-title{
+    color:#0d6b45;
+    margin-top:30px;
+    margin-bottom:15px;
+    border-left:5px solid #0d6b45;
+    padding-left:10px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+label{
+    display:block;
+    margin-bottom:6px;
+    font-weight:600;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    margin-bottom:15px;
+}
+
+textarea{
+    resize:vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline:none;
+    border-color:#0d6b45;
+}
+
+.checkbox{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    margin:15px 0;
+}
+
+.checkbox input{
+    width:auto;
+    margin-top:5px;
+}
+
+button{
+    width:100%;
+    background:#0d6b45;
+    color:#fff;
+    border:none;
+    padding:15px;
+    font-size:18px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#085235;
+}
+
+.success{
+    display:none;
+    background:#d4edda;
+    color:#155724;
+    padding:15px;
+    border-radius:8px;
+    margin-bottom:20px;
+}
+
+.notice{
+    background:#fff8e6;
+    border-left:5px solid #ffb100;
+    padding:15px;
+    margin-bottom:20px;
+}
+
+.required{
+    color:red;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+    <h1>VALIDDXN GLOBAL FUNDING PROGRAM</h1>
+    <p>Small Business Funding Application Portal</p>
+</div>
+
+<div class="form-container">
+
+<div class="notice">
+    <strong>Important:</strong>
+    Submission of this application does not guarantee funding approval.
+    All applications are reviewed according to program eligibility requirements.
+</div>
+
+<div class="success" id="successBox">
+Application submitted successfully.
+</div>
+
+<form id="fundingForm">
+
+<h2 class="section-title">Applicant Information</h2>
+
+<div class="grid">
+
+<div>
+<label>First Name <span class="required">*</span></label>
+<input type="text" required>
+</div>
+
+<div>
+<label>Last Name <span class="required">*</span></label>
+<input type="text" required>
+</div>
+
+<div>
+<label>Middle Name</label>
+<input type="text">
+</div>
+
+<div>
+<label>Date of Birth <span class="required">*</span></label>
+<input type="date" required>
+</div>
+
+<div>
+<label>Gender <span class="required">*</span></label>
+<select required>
+<option value="">Select</option>
+<option>Male</option>
+<option>Female</option>
+</select>
+</div>
+
+<div>
+<label>Nationality <span class="required">*</span></label>
+<input type="text" required>
+</div>
+
+<div>
+<label>Email Address <span class="required">*</span></label>
+<input type="email" required>
+</div>
+
+<div>
+<label>Phone Number <span class="required">*</span></label>
+<input type="tel" required>
+</div>
+
+<div>
+<label>NIN Number</label>
+<input type="text">
+</div>
+
+<div>
+<label>BVN Number</label>
+<input type="text">
+</div>
+
+</div>
+
+<h2 class="section-title">Residential Address</h2>
+
+<label>Residential Address <span class="required">*</span></label>
+<textarea rows="3" required></textarea>
+
+<div class="grid">
+<div>
+<label>State</label>
+<input type="text">
+</div>
+
+<div>
+<label>LGA</label>
+<input type="text">
+</div>
+
+<div>
+<label>City</label>
+<input type="text">
+</div>
+
+<div>
+<label>Postal Code</label>
+<input type="text">
+</div>
+</div>
+
+<h2 class="section-title">Business Information</h2>
+
+<div class="grid">
+
+<div>
+<label>Business Name <span class="required">*</span></label>
+<input type="text" required>
+</div>
+
+<div>
+<label>Business Registration Number</label>
+<input type="text">
+</div>
+
+<div>
+<label>Business Sector <span class="required">*</span></label>
+<select required>
+<option value="">Select</option>
+<option>Agriculture</option>
+<option>Technology</option>
+<option>Retail</option>
+<option>Manufacturing</option>
+<option>Education</option>
+<option>Healthcare</option>
+<option>Fashion</option>
+<option>Other</option>
+</select>
+</div>
+
+<div>
+<label>Years in Operation</label>
+<input type="number">
+</div>
+
+<div>
+<label>Number of Employees</label>
+<input type="number">
+</div>
+
+<div>
+<label>Monthly Revenue (₦)</label>
+<input type="number">
+</div>
+
+</div>
+
+<label>Business Description</label>
+<textarea rows="4"></textarea>
+
+<h2 class="section-title">Funding Request</h2>
+
+<div class="grid">
+
+<div>
+<label>Funding Amount Requested (₦)</label>
+<input type="number" required>
+</div>
+
+<div>
+<label>Purpose of Funding</label>
+<select required>
+<option value="">Select</option>
+<option>Business Expansion</option>
+<option>Equipment Purchase</option>
+<option>Inventory</option>
+<option>Working Capital</option>
+<option>Training</option>
+<option>Other</option>
+</select>
+</div>
+
+</div>
+
+<label>How Will The Funds Be Used?</label>
+<textarea rows="5" required></textarea>
+
+<h2 class="section-title">Bank Account Details</h2>
+
+<div class="grid">
+
+<div>
+<label>Account Name</label>
+<input type="text" required>
+</div>
+
+<div>
+<label>Bank Name</label>
+<input type="text" required>
+</div>
+
+<div>
+<label>Account Number</label>
+<input type="text" maxlength="10" required>
+</div>
+
+<div>
+<label>Account Type</label>
+<select>
+<option>Savings</option>
+<option>Current</option>
+<option>Business</option>
+</select>
+</div>
+
+</div>
+
+<h2 class="section-title">Document Upload</h2>
+
+<label>Passport Photograph</label>
+<input type="file" accept="image/*">
+
+<label>Valid Identification Card</label>
+<input type="file">
+
+<label>Business Registration Certificate</label>
+<input type="file">
+
+<label>Business Plan (Optional)</label>
+<input type="file">
+
+<label>Bank Statement</label>
+<input type="file">
+
+<h2 class="section-title">Declaration & Consent</h2>
+
+<div class="checkbox">
+<input type="checkbox" required>
+<span>
+I certify that the information provided is accurate and complete. I understand that false information may lead to disqualification.
+</span>
+</div>
+
+<div class="checkbox">
+<input type="checkbox" required>
+<span>
+I consent to the collection, verification and processing of my information for the purpose of assessing this application.
+</span>
+</div>
+
+<button type="submit">
+SUBMIT APPLICATION
+</button>
+
+</form>
+
+</div>
+</div>
+
+<script>
+document.getElementById("fundingForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    document.getElementById("successBox").style.display = "block";
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+    setTimeout(()=>{
+        alert("Application Submitted Successfully.");
+    },500);
+});
+</script>
+
+</body>
+</html>
